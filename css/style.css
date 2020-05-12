@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  height: 90vh;
+  width: 85%;
+  margin: auto;
+  justify-content: space-evenly;
+  align-items: center;
+  background: linear-gradient(to right, rgba(25, 25, 112), rgba(152, 251, 152)),
+    url(../img/final-fantasy-vii-remake-aerith-weapons.jpg);
+  background-blend-mode: screen;
+}
+
+.deskripsi__tokoh {
+  font-family: Montserrat;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  height: 5.5rem;
+  justify-content: space-between;
+}
+
+.deskripsi__tokoh h2 {
+  font-size: 2rem;
+}
+
+.deskripsi__tokoh p {
+  font-size: 1.25rem;
+}
+
+.avatar img {
+  width: 22.5em;
+  height: 28.125em;
+}
+
+@media (max-width: 768px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+
+  .avatar {
+    font-size: 11px;
+  }
+
+  .container {
+    width: 95%;
+  }
+}
